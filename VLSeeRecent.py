@@ -9,7 +9,6 @@ import socket
 import datetime
 
 _author_ = ['Copyright 2021 North Loop Consulting']
-_copy_ = ['(C) 2021']
 _description_ = ("---VL_See_Recent v1.0---"
                  " A tool t retrieve recent file activity from VLC configuration ini file."" \n "
                  " This iteration of the tool was designed solely for use with KAPE. "" \n"
@@ -28,7 +27,6 @@ parser.add_argument("OUTPUT_FOLDER", help="Path to the output file")
 
 # Optional Arguments
                     
-
 #Parsing and using the arguments
 
 args = parser.parse_args()
@@ -36,12 +34,8 @@ args = parser.parse_args()
 input_folder = args.INPUT_FOLDER
 output_folder = args.OUTPUT_FOLDER
 
-
-
-
 savePath = args.OUTPUT_FOLDER
 completeName = os.path.join(savePath, "VL_See_Recent Report.txt")
-
 
 #open a text output file
 
@@ -54,12 +48,7 @@ with open(completeName, 'w') as report:
 def parse_INI():
     
     INI = (input_folder + "\\Users\\")  #input folder = drive letter, then narrow to user folders
-    
-    
-##    print("VL_See_Recent Report ")
-##    print("Report Generated:  ", now)
-##    print("Host:  " + socket.gethostname(), "\n")
-
+   
     with open(completeName, 'a') as report:     #print report header to file
         sys.stdout = report
         print("VL_See_Recent Report ")
@@ -97,12 +86,10 @@ def parse_INI():
                                 print(fpath)
                                 sys.stdout = org_stdout
                             
-                #print("\n")
                 with open(completeName, 'a') as report:
                     sys.stdout = report
                     print("\n")
                     sys.stdout = org_stdout
                
-
 parse_INI()
 report.close()
