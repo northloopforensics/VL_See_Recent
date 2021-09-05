@@ -11,7 +11,7 @@ import datetime
 _author_ = ['Copyright 2021 North Loop Consulting']
 _copy_ = ['(C) 2021']
 _description_ = ("---VL_See_Recent v1.0---"
-                 " A tool t retrieve recent file activity from VLC configuration ini file."" \n "
+                 " A tool to retrieve recent file activity from VLC configuration ini file."" \n "
                  " This iteration of the tool was designed solely for use with KAPE. "" \n"
                  " The Target - tkape and Module - mkape files needed to run this tool are available on the same Github page you used to download VL_See_Recent. " 
                  )
