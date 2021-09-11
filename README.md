@@ -1,5 +1,5 @@
 # VL_See_Recent
-Retrieves recent file access from VLC .ini configuration file.
+Retrieves recent file list from VLC .ini configuration file.
 
 This executable can be use with KAPE or command line input. The relevant Module (mkape) file is available here as well.
 
